@@ -20,7 +20,7 @@ jobs:
           username: ${{ secrets.EC2_USER }}
           key: ${{ secrets.EC2_SSH_KEY }}
           source: "app/*"
-          target: "/home/ubuntu/app"
+          target: "/home/ubuntu"
 
       - name: Deploy Docker Container
         uses: appleboy/ssh-action@v1.0.3
@@ -29,7 +29,7 @@ jobs:
           username: ${{ secrets.EC2_USER }}
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
-  cd /home/ubuntu/app/app
-  docker build --no-cache -t sonu-devops-app .
-  docker rm -f sonu-container || true
-  docker run -d -p 8080:80 --name sonu-container sonu-devops-app
+            cd /home/ubuntu/app
+            docker build --no-cache -t sonu-devops-app .
+            docker rm -f sonu-container || true
+            docker run -d -p 8080:80 --name sonu-container sonu-devops-app
