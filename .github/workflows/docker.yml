@@ -30,6 +30,6 @@ jobs:
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
             cd /home/ubuntu/app
-            docker build -t sonu-devops-app .
+            docker build --no-cache  -t sonu-devops-app .
             docker rm -f sonu-container || true
             docker run -d -p 8080:80 --name sonu-container sonu-devops-app
