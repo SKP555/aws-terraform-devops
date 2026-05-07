@@ -37,49 +37,27 @@ The complete infrastructure, deployment workflow, monitoring stack, and remediat
 
 ---
 
-# 🔥 Why This Project Stands Out
+# 🔥 Key Highlights
 
-✅ Fully automated Infrastructure as Code using Terraform
-✅ Production-style Docker deployment on AWS EC2
-✅ End-to-end CI/CD automation using GitHub Actions
-✅ Cloud-native monitoring and observability using CloudWatch
-✅ SNS-powered real-time incident alerting
-✅ AI-inspired log anomaly detection using Python
-✅ Self-healing container remediation workflow
-✅ Real-world debugging, troubleshooting, and operational recovery
-✅ Infrastructure, deployment, monitoring, and remediation integrated into a single platform
+* Infrastructure provisioned entirely using Terraform
+* Automated CI/CD deployment pipeline using GitHub Actions
+* Docker-based application deployment on AWS EC2
+* CloudWatch-powered monitoring and observability workflows
+* SNS-based operational alerting
+* Centralised Docker log aggregation
+* AI-inspired anomaly detection using Python
+* Automated self-healing container remediation
+* Real-world debugging and operational troubleshooting workflows
 
 ---
 
 # 🧠 System Architecture
 
-The following architecture demonstrates the complete DevOps lifecycle implemented in this platform including infrastructure provisioning, CI/CD automation, observability, monitoring, alerting, AI-driven anomaly detection, and self-healing remediation.
+This platform follows a production-style DevOps workflow integrating Infrastructure as Code, CI/CD automation, observability, monitoring, alerting, and AI-driven remediation into a unified cloud-native deployment architecture.
 
 ![Architecture Diagram](images/architecture-diagram.png)
 
-### Architecture Workflow
-
-```text
-Developer
-    ↓
-GitHub Repository
-    ↓
-GitHub Actions CI/CD
-    ↓
-Terraform Infrastructure Provisioning
-    ↓
-AWS EC2 Instance
-    ↓
-Docker Containerised Application
-    ↓
-CloudWatch Metrics & Logs
-    ↓
-SNS Alerts
-    ↓
-AI Log Analyzer
-    ↓
-Self-Healing Automation
-```
+The workflow begins with infrastructure provisioning using Terraform, followed by automated Docker deployments through GitHub Actions. CloudWatch provides metrics, alarms, and centralised logging while the Python-based anomaly detection engine continuously analyses operational logs and performs automated container recovery when failures are detected.
 
 ---
 
@@ -303,19 +281,19 @@ This project strengthened practical engineering knowledge across:
 
 ---
 
-# 🚀 Business & Engineering Impact
+# 🚀 Engineering Impact
 
-This platform demonstrates practical experience across modern DevOps engineering domains including:
+This project demonstrates practical experience across modern cloud-native DevOps domains including:
 
-* Cloud infrastructure provisioning
+* Infrastructure as Code
 * Deployment automation
+* Containerisation workflows
 * Monitoring and observability engineering
 * Incident detection and remediation
-* Infrastructure troubleshooting
-* Operational reliability workflows
-* Self-healing automation patterns
+* Operational troubleshooting
+* Self-healing automation concepts
 
-The project reflects production-style engineering workflows used in real cloud-native DevOps environments.
+The platform reflects production-oriented engineering practices commonly used in modern DevOps and Site Reliability Engineering environments.
 
 ---
 
