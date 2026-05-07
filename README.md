@@ -13,17 +13,13 @@
 
 ---
 
-![Architecture Diagram](images/architecture-diagram.png)
-
----
-
 # 📌 Overview
 
 This project simulates a production-grade cloud-native DevOps + AIOps environment focused on automation, observability, operational reliability, CI/CD engineering, monitoring, and self-healing remediation.
 
 The platform provisions AWS infrastructure using Terraform, deploys Dockerised workloads on EC2, automates deployments through GitHub Actions, monitors workloads using CloudWatch, aggregates logs centrally, triggers SNS alerts, and performs AI-inspired anomaly detection with automated container recovery.
 
-Unlike traditional beginner DevOps projects, this platform focuses heavily on:
+This project focuses heavily on:
 
 * Infrastructure as Code
 * Deployment automation
@@ -327,4 +323,3 @@ DevOps | Cloud | Automation | Observability | AIOps
 # ⭐ Support
 
 If you found this project interesting or useful, consider giving the repository a star.
-
