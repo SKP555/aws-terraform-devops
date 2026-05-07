@@ -113,6 +113,27 @@ resource "aws_instance" "web" {
   vpc_security_group_ids = [aws_security_group.web_sg.id]
   key_name               = "devops-key"
 
+user_data = <<-EOF
+              #!/bin/bash
+              apt update -y
+              apt install -y apache2
+              systemctl start apache2
+              systemctl enable apache2
+
+              cat <<HTML > /var/www/html/index.html
+              <!DOCTYPE html>
+              <html>
+              <head>
+                  <title>Sonu's DevOps Project</title>
+              </head>
+              <body>
+                  <h1>Hello, Welcome to Sonu's DevOps Project 🚀</h1>
+                  <p>Deployed using Terraform on AWS EC2.</p>
+              </body>
+              </html>
+              HTML
+              EOF
+
   tags = {
     Name      = "devops-server"
     ManagedBy = "Terraform"
